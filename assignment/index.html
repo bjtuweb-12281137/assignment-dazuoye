@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>我的film我做主</title>
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="yangshi.css" rel="stylesheet"/><script language="JavaScript" type="text/javascript" src="bootstrap/js/jquery-1.7.2.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+	function tobaidu()
+	{
+		//alert("hello");
+		//window.location.href="http://www.baidu.com"; 
+		//window.navigate("http://www.baidu.com");
+		
+		window.open("http://www.baidu.com");
+
+	}
+</script>
+
+<style>
+	
+#main{
+		height:0px;
+		/*background: green;*/
+	}
+
+	#lside{
+		margin:0px auto;
+		float:left;
+		height: 350px;
+		width: 960px;
+		/*background: pink;*/
+	}
+	
+	#upper{
+		float: left;
+		height: 300px;
+		width: 960px;
+		/*background: black;*/
+	}
+	
+/*	#middle{
+		float: left;
+		height: 300px;
+		width: 960px;
+		color: white;
+		/*background: green;*/
+	}
+*/
+	#down{
+		float: left;
+		height: 300px;
+		width: 960px;
+		/*background: black;*/
+	}
+
+	#rside{
+		float: right;
+		height: 350px;
+		width: 320px;
+		/*background: purple;*/
+	}
+
+	
+	#footer_mini{
+		clear:both;
+		font-size: 12px;
+		margin:0 auto;
+		width: 980px;
+	}?
+	.footer_item{
+		border-left: 1px dotted black;
+    	border-right: 1px dotted #F7F7F7;
+    	float: left;
+    	height: 160px;
+    	padding: 20px 0 0 25px;
+    	width: 161px;
+	}
+	/*sliding box*/
+	*{ 
+		padding:0px; 
+		margin:0px; 
+	}
+	a{ 	
+		color:#C8DCE5; 
+	}
+	h3{ 
+		margin:10px 10px 0 10px; 
+		color:#FFF; 
+		font:bold 18pt Arial, sans-serif; 
+		letter-spacing:-1px; 
+	}
+	.boxgrid{ 
+		width: 280px; 
+		height: 280px; 
+		margin:20px; 
+		background:#161613; 
+		border: solid 1px #FFF0F5;
+		overflow: hidden; 
+		position: relative;
+		float: left;
+	}
+	.boxgrid img{
+		position: absolute; 
+		top: 0; left: 0; 
+		border: 0; 
+	}
+	.boxgrid p{ 
+		padding: 0 10px; 
+		color:#afafaf; 
+		font-weight:bold; 
+		font:10pt "Lucida Grande", Arial, sans-serif; 
+	}
+
+
+
+</style>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" >
+</script>
+ <![endif]-->
+</head>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="logoone" align="center" >
+	<img src="img/movies.png" /  >
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="span1">
+		</div>
+		<div class="span6">
+			<table>
+			<tr><p>&nbsp;</p></tr>
+			<tr>	
+				<td>
+					<div class="logotwo" title="连接到m1905电影网站">
+						<a href="http://www.m1905.com"/><img src="img/logo.png" width="350" height="110" /  ></a>					</div>
+				</td>
+			</tr>
+			<tr><p>&nbsp;</p></tr>
+			<tr>
+				<td>
+					<form class="form-search form-inline" title="连接到百度，搜索你的imovie">
+						<p>&nbsp;</p>
+						<button type="submit" class="btn" onclick="tobaidu()" > 链接到百度搜索 </button>
+					</form>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+<p>&nbsp;</p>
+		<div class="span3">
+		<fieldset>
+		<legend>用户登录</legend>
+				<form action="welcome.php" method="post">
+					<div class="control-group">
+						<div class="controls">
+							姓名<input id="name" type="text" size="100" title="请输入用户姓名" name="name" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							密码<input id="password" type="password" title="请输入用户密码" name="password" />
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<label class="checkbox"><input type="checkbox" /> Remember me</label> 
+						</div>
+					</div>
+						
+					<center><input class="btn btn-success" type="submit" value="  登陆  " ></center>
+				 </form>
+				 	<center>	
+				 	<form action="indextwo.html" method="post" >
+					 	 <input class="btn btn-primary" type=submit value="  注册  ">
+					</form>
+					</center>
+				
+		</fieldset>
+		</div>
+
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container-fluid">
+						 <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a> <a href="#" class="brand">iMovie,My Life</a>
+						<div class="nav-collapse collapse navbar-responsive-collapse">
+							<ul class="nav">
+								<li >
+									<a href="#">返回页面顶部</a>
+								</li>
+								<li>
+									<a href="#dh">动画</a>
+								</li>
+								<li>
+									<a href="#gx">搞笑</a>
+								</li>
+								<li>
+									<a href="#gz">古装</a>
+								</li>
+								<li>
+									<a href="#jd">经典</a>
+								</li>
+								<li>
+									<a href="#jq">剧情</a>
+								</li>
+							</ul>
+							<ul class="nav pull-right">
+								 <li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <b class="caret"></b></a>
+								  <ul class="dropdown-menu">
+									<li><a href="#">邮件订阅movies</a></li>
+									<li><a href="#">RSS订阅movies</a></li>
+									<li class="divider"></li>
+									<li><a href="#">关于我——DHM</a></li>
+									<li><a href="#">更多帮助</a></li>
+								  </ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<a name="dh" id="dh"></a>
+<p>&nbsp;</p>
+<div class="container" name="dh">
+	<div class="span4">
+		<div id = "main">
+    		<div id = "lside">
+			<div id = "upper">
+				<div class="boxgrid slidedown">
+		 			<img class="cover" src="img/donghua.png"/>
+		 			<p>&nbsp;</p>
+		 			<p>&nbsp;</p> 
+		 			<h3>按动画分类</h3>
+		 			<p>According to cartoon</p>
+		 			<p>《马达加斯加3》</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>《马达加斯加3》讲述4位主角随着“马戏团”周游欧洲的故事。麦克多蒙德所配音的是一个人类角色。这个角色十分精明狡猾，是一个带领人马捉捕动物的大坏蛋。而除了麦克多蒙德外，《马达加斯加3》还将加入多名“新丁”，包括来自意大利的海狮，来自俄罗斯的老虎以及美洲豹等，从而使得本片更加“全球化”。四个好伙伴逃出非洲后，他们便迫切想要回到纽约。按照惯例企鹅和猴子是要出马帮忙的，并且按照惯例它们也是会把整个计划搞黄的，所以按照惯例四个好兄弟们又一次发现自己错误地降落在了错误的地方—蒙特卡洛。他们的到来惊动了当地的动物管制中心，经过几个回合的拼死搏斗之后，动物们加入了一个欧洲巡演马戏团寻求保护。在马戏团的日子他们可谓是春风得意，旅途上的演出也唤醒了四人内心对表演事业的渴望与热情。到底他们最后能否成功回纽约，到底他们会否重新进入“演艺圈”，请大家拭目以待吧！</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/26313.htm?frp=browse">=>>点击进入电影 </a>
+		</div>		
+	</div>
+</div>
+<p>&nbsp;</p>
+
+<div class="container">
+	<div class="span4">
+		<div id = "main">
+	    	<div id = "lside">
+				<div id = "upper">
+					<div class="boxgrid slidedown">
+			 			<img class="cover" src="img/dhbing.png" />
+			 			<p>&nbsp;</p>
+			 			<p>&nbsp;</p> 
+			 			<h3>按动画分类</h3>
+			 			<p>According to cartoon</p>
+			 			<p>《冰河时代3》</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>一群老朋友又将开始一段新的旅程。当猛犸象曼尼（Manny）沉浸在马上要当爸爸的喜悦之时，剑齿虎迭戈（Diego）却为自己的逐渐衰老而黯然伤神，此时树懒希德（Sid）则发现了三枚恐龙蛋，居然“母爱”泛滥，想作这三只小霸王龙的妈妈，结果被小恐龙真正的妈妈霸王龙掳走。为了寻找同伴，一群可爱的动物朋友们走进了隐藏在冰河世纪之下的“侏罗纪公园”，在这片神奇的地方，他们会认识什么新朋友，又会遭遇到什么危险，这都让所有众多“冰粉”们充满期待。这部电影作为20世纪福克斯公司（20th Century Fox）第一部3D形式大规模上映的动画片其制作成本达到1.2亿美元，几乎是《冰河世纪1》的两倍。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/25357.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+
+<div class="container">
+	<div class="span4">
+		<div id = "main">
+	    	<div id = "lside">
+				<div id = "upper">
+					<div class="boxgrid slidedown">
+			 			<img class="cover" src="img/dhxiong.png" />
+			 			<p>&nbsp;</p>
+			 			<p>&nbsp;</p> 
+			 			<h3>按动画分类</h3>
+			 			<p>According to cartoon</p>
+			 			<p>《熊出没注意》</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>一场漆黑雨夜的意外事故，一段笑料十足的误打误撞，将两个外表相似却内容各异的箱子调换。光头强始料未及：自己的“宝贝箱”已经变成了藏有“神秘宝贝”的箱子，更出他意料：“神秘宝贝”正将他和老对手熊大、熊二一步步推进一个巨大秘密当中……啼笑皆非间，光头强、熊大、熊二的生活发生了天翻地覆的变化，许多新面孔纷纷出现，森林的平静就此被彻底打破——出于对“神秘宝贝”的渴望，各方奋力追逐、极尽所能，然而，“神秘宝贝”究竟是什么？“宝贝”的背后又隐藏着多少故事？面临前所未见的种种状况，光头强、熊大、熊二是继续对抗？还是携手同行？在这一次的“夺宝”旅程中，他们能否以“熊兵”之势，力挽狂澜？</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/115100.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<a name="gx" id="gx"></a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>搞笑类</h3>
+<div class="container">
+	<div class="span4">
+		<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/gxfan.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按搞笑分类</h3>
+				 			<p>According to laughter</p>
+				 			<p>《饭局也疯狂》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>高档饭店“天人一”的封老板（刘桦 饰）为如何处理在自己饭店偷录的一张光盘而发愁，但更让他头疼的事情又来了：雇员们因长期拖欠工资全体离职，只有三个本家亲戚留下帮忙，天人一眼看就要倒闭。知名国学、成功学、风水学大师谭大山（范伟 饰）受封老板所托，为他带来一桌饭局，使天人一在某执行总监莫妮卡（莫小棋 饰）前来谈判收购事宜时，不至于太过冷清。谭大山带来的客人们：身份神秘的大老总（韩童山 饰）、暴发户矿主蔡哥（刘亚津 饰）和偷偷跟随的飞贼小蝴蝶、动作明星家明（黄渤 饰）陆续抵达。刑警老梅（梁冠华 饰）一家三口也在这天选择天人一就餐。封老板无人可用只得央求前来讨债的鱼贩老虾米担任大厨，忙乱的饭局上人人各有心思，碰撞出了连串出人意表的故事</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/15945.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/gaoxiao.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按搞笑分类</h3>
+				 			<p>According to laughter</p>
+				 			<p>《憨豆先生》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>《憨豆先生》(Mr. Bean)是英国BBC电视台的招牌喜剧，以半小时剧集形式播放，共计14集。罗温·艾金森担当剧中主角，并建立了其形象。憨豆先生是个，有一点笨拙，有一点幼稚，有一点单向思维，有一点腼腆，又有一点短路的家伙，做着单一的事情，穿着单一的衣服。憨豆先生有一个亲密的伙伴，就是他常常随身携带心爱的泰迪熊，连睡觉也要抱着。他平日的穿着则是非常典型的英国保守中产阶级的装扮。剧中对白极少，几乎都是靠“丰富的肢体动作”和“变化多端的表情”来呈现。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/tv/18949.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<a name="gz" id="gz"></a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>古装类</h3>
+<div class="container">
+	<div class="span4">
+		<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/gzgong.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按古装分类</h3>
+				 			<p>According to ancient costume</p>
+				 			<p>《深宫谍影》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>电视剧剧情介绍：</p>
+	<p>清朝康熙年间，嫔妃紫荷当晚设计康熙临幸，阴差阳错导致涵香的生母以丹格格与酒醉的康熙发生了关系。以丹格格非婚怀孕，在艰难的环境中临盆在即，却被黑衣人追杀，产下双胞胎即被害葬身火海。18年后长大后的涵香，因设计衣饰技艺高超被选入宫，但意外被仇人认出她的身上有其生母的玉蝴蝶。一心想往上爬的同侪好友雪雁，偷听到涵香竟然是皇亲贵族，遂冒名认祖归宗，却在收养仪式前一天，溺死在浴桶当中。岂料惊人的消息再度传出，有秘探密报康熙，雪雁并非以丹格格的女儿！涵香身陷命案，处境危险，却势必要察查出生母的真凶，是谁？涵香查知当年嫔妃紫荷为了隐藏此事，遂对格格有了杀机，原以为真凶查到，却又意外发现生母被火烧死当晚，她的父母买了大量的柴火，生母的亲生父母为了掩盖这丑闻，也有可能杀害自己的女儿？涵香觉得每个人都有杀人动机，但真正凶手就只有一个。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/tv/11184.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/gzmei.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按古装分类</h3>
+				 			<p>According to ancient costume</p>
+				 			<p>《美人心计》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电视剧剧情介绍：</p>
+	<p>西汉初年，幼年时期的窦漪房(原名云汐)因母亲卷入后宫斗争被追杀，导致满门抄斩，长大后误打误撞被选入宫为奴成为家人子。她设计将周采女生的儿子换给吕后的外孙女—皇后张嫣，吕后欣赏她的聪明能干，以赐婚为名派往代国监视刘恒母子。为天下苍生不再受苦，也为吕后能更信任她，漪房提议刘恒以修陵寝为名秘密练兵，令所有人都觉得她是祸水。只有刘恒始终相信她并封后，夫妻俩走过一个又一个难关，终于成就千秋大业。母仪天下的她发现，拥有权力的同时感情却在渐渐流逝，她努力挽回丈夫的心，阻止儿子们互相残杀，运用女性独特的手法化解了一次又一次的危机，并且为西汉创立了历史上有名的文景之治。她的名字也载入史册，为后人所称颂。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/tv/10985.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<a name="jd" id="jd"></a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>经典类</h3>
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/jdshi.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按经典分类</h3>
+				 			<p>According to typical</p>
+				 			<p>《史密斯夫妇》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>约翰（布拉德·皮特 Brad Pitt 饰）和简（安吉丽娜·朱莉 Angelina Jolie 饰）已经结婚了7年多，生活就像淡水般无味。婚姻就像坟墓，让他们过着死水一潭的生活。然而这仅仅是表象。背后他们各有刺激惊险的职业——约翰和简分属两个不同的秘密杀手机构，但彼此却不知道对方的职业身份。直到他们同时接到一个任务，刺杀目标竟是同一人。身份的真相才开始慢慢揭开。反复的试探和猜测，简终于不小心说穿了自己身份。于是一场同室操戈不可避免的发生了。但是他们也开始意识到，自己只是组织的一个棋子。而眼前的，是共同生活了7年的爱人。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/26751.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/jdmu.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按经典分类</h3>
+				 			<p>According to typical</p>
+				 			<p>《暮光之城》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>贝拉是一个与众不同的女孩，她不热爱虚荣，不会像其他女孩一样追求时髦，也不愿伪装自己刻意去和合不来的同学搞好关系。因为母亲再婚的缘故，贝拉搬去和父亲同住。在新学校里，贝拉遇到了一个名叫爱德华的男孩，他跟贝拉遇见过的所有人都不一样，不仅英俊、聪明、幽默，而且跟贝拉非常有共同点--同样孤独。两人很快就陷入了爱河。然而爱德华的真实身份其实是一个吸血鬼，爱德华和贝拉能有情人终成眷属吗？</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/14151.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/jingdian.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按经典分类</h3>
+				 			<p>According to typical</p>
+				 			<p>《泰坦尼克号》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>1912年4月10日，号称 “世界工业史上的奇迹”的豪华客轮泰坦尼克号开始了自己的处女航，从英国的南安普顿出发驶往美国纽约。富家少女罗丝（凯特温丝莱特）与母亲及未婚夫卡尔坐上了头等舱；另一边，放荡不羁的少年画家杰克（莱昂纳多·迪卡普里奥）也在码头的一场赌博中赢得了下等舱的船票。罗丝厌倦了上流社会虚伪的生活，不愿嫁给卡尔，打算投海自尽，被杰克救起。很快，美丽活泼的罗丝与英俊开朗的杰克相爱，杰克带罗丝参加下等舱的舞会、为她画像，二人的感情逐渐升温。1912年4月14日，星期天晚上，一个风平浪静的夜晚。泰坦尼克号撞上了冰山，“永不沉没的”泰坦尼克号面临沉船的命运，罗丝和杰克刚萌芽的爱情也将经历生死的考验。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/24894.htm?&q=泰坦尼克号%00">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+
+<a name="jq" id="jq"></a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>剧情类</h3>
+
+
+
+
+
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/juqing.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按剧情分类</h3>
+				 			<p>According to story</p>
+				 			<p>《美国队长2》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	 <p>在经历了纽约大战后，美国队长史蒂夫·罗杰斯（克里斯·埃文斯 Chris Evans 饰）在华盛顿过着恬淡的生活，努力尝试着融入现代社会。然而当一名神盾局同事遭遇袭击后，史蒂夫被迫卷入了一场威胁全球安危的阴谋。他与黑寡妇（斯嘉丽·约翰逊 Scarlett Johansson 饰）携手出击，一边防备欲将自己灭口的杀手，一边努力揭露这个巨大阴谋的真面目。 　　而当敌人的邪恶计划全局曝光后，美国队长和黑寡妇得到了一位新同盟“猎鹰”（安东尼·麦凯 Anthony Mackie 饰）的协助。然而他们也发现自己将要面临的，是前所未遇、出乎意料的黑暗劲敌——冬兵（塞巴斯蒂安·斯坦 Sebastian Stan 饰）</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/116523.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+	<div class="span4">
+	<div id = "main">
+	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/jqfei.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按剧情分类</h3>
+				 			<p>According to story</p>
+				 			<p>《非诚勿扰》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>从北海道回来后，笑笑对方先生死心，但是对秦奋还没有产生爱情，于是两人决定住在一起试婚。笑笑醉酒后，承认自己对秦奋的感情不是爱情，两人日渐疏远。秦奋回到北京，当上了电视台的主持人。秦奋好友李香山患上癌症，秦奋和好友们在他生前搞了一场“人生告别会”，笑笑和秦奋在会上感慨颇多，两人再次走到一起。 </p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/15253.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<div class="container">
+	<div class="span4">
+		<div id = "main">
+		    	<div id = "lside">
+					<div id = "upper">
+						<div class="boxgrid slidedown">
+				 			<img class="cover" src="img/jqthere.png" />
+				 			<p>&nbsp;</p>
+				 			<p>&nbsp;</p> 
+				 			<h3>按剧情分类</h3>
+				 			<p>According to story</p>
+				 			<p>《失恋33天》</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="span7">
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>电影剧情介绍：</p>
+	<p>高端婚礼策划师黄小仙（白百何 饰）做梦也想不到，相恋七年的男友居然和自己的闺蜜走到了一起，这让一向刻薄强势的她无论如何也不能忍受。可是地球并不会因为某人的失恋而停止运转，黄小仙在面对情感失意的同时，还不得不面对工作上的压力。但是，在没有了爱情的这段时间里，黄小仙发现了很多以前根本不会去注意的东西，例如那个总是与自己针峰相对的娘娘腔同事王小贱（文章 饰）并没有那么讨厌，例如钻石王老五与河南籍港台腔女子的结合到底是什么原理，还有如何走到金婚的秘诀。在明白了种种之后，也就是在黄小仙失恋的第33天里，在那个灯火阑珊的城市里，她发现“那人”其实一直伴她左右。</p>
+		<div class="zhaopian" >
+	 		<a href="http://v.baidu.com/movie/22196.htm?frp=browse">=>>点击进入电影</a> 
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+
+
+<!-- sliding box	- country -->
+    <!-- sliding box - Oscar -->
+    <script type="text/javascript" src="library/jquery-1.3.1.js"></script>
+	<script type="text/javascript">
+ 	$(document).ready(function(){
+    //Diagnal Sliding
+    $('.boxgrid.slidedown').hover(function(){
+     $(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+    }, function() {
+     $(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+    });
+ 	})
+	</script>
+
+
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="logothree" align="center"> 
+<td>&nbsp;</td>  <td>about me &#169;dhm 12281137</td>
+</p>
+<p class="logothree" align="center"><td>
+<a  href= http://i.baidu.com>&nbsp;made&nbsp;by&nbsp;DHM刁红曼,12281137</a> &nbsp;| &nbsp;<a href= http://www.renren.com/348903891>我的人人主页</a>
+</td>
+</p>
+
+
+<p>&nbsp;</p>
+<script language="JavaScript" type="text/javascript" src="bootstrap/js/jquery-1.7.2.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
